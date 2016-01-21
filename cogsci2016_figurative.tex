@@ -23,6 +23,8 @@
 \usepackage{cogsci}
 \usepackage{pslatex}
 \usepackage{apacite}
+\usepackage{todonotes}
+\usepackage[usenames, dvipsnames]{color}
 
 
 \title{Empirical and Computational Approaches to Metaphor and Figurative Meaning}
@@ -54,28 +56,31 @@ Figurative language; Metaphor; Computational modeling; Computational linguistics
 \end{quote}
 
 \section{Motivation}
-One of the hallmarks of human intelligence is the ability to go beyond literal meanings of utterances to infer speakers' intended meanings, a feat accomplished routinely by humans but that remains elusive to the most advanced artificial systems. Figurative language such as metaphor, in particular, provides a striking case where complex meanings arise from utterances whose literal meanings are false. For example, the sentence \emph{My lawyer is a shark} is literally false (because lawyers are human beings), yet successfully communicates relevant features of the lawyer in question (e.g. \emph{ruthlessness}, but not \emph{lives underwater} or \emph{has sharp teeth}). Examining how people derive and produce figurative meanings has been an active area of research in psychology, linguistics, philosophy, and, more recently, computer science. 
+One of the hallmarks of human intelligence is the ability to go beyond literal meanings of utterances to infer speakers' intended meanings, a feat accomplished routinely by humans but that remains elusive to the most advanced artificial systems. Figurative language such as metaphor, in particular, provides a striking case where complex meanings arise that cannot be derived from the literal semantics alone. For example, the sentence \emph{My lawyer is a shark} is literally false (because lawyers are human beings), yet communicates relevant features of the lawyer in question (e.g. \emph{ruthlessness}, but not \emph{lives underwater} or \emph{has sharp teeth}). 
+%Examining how people derive and produce figurative meanings has been an active area of research in psychology, linguistics, philosophy, and, more recently, computer science. 
 
 %These fields have generated a great deal of work concerning the relationship between metaphor and thought \cite{gibbs2008metaphor, lakoff1993contemporary}, metaphor and analogical reasoning \cite{gentner2001metaphor}, figurative language and communication, and the relationship between figurative meaning and creativity.
 
-Because metaphor and figurative language raise a range of questions core to the study of language and cognition, the topic has been approached from various angles and with a diverse set of methods. Some psychologists focus on the cognitive mechanisms that underly interpretations of specific types of figurative use, such as how people align shared properties and analogous relations across domains in order to understand metaphor \cite{gentner1983structure, gentner2001metaphor}. Others aim to identify figurative uses in corpora in order to extract patterns that shed light on how figurative meanings are generated and interpreted in naturalistic contexts \cite{steen2010method}. In the realm of linguistics and pragmatics, researchers have applied theories of communication to model how people arrive at contextually appropriate interpretations of literally inappropriate utterances \cite{kao2014nonliteral, wilson2006metaphor, gibbs2012interpreting}, while researchers in artificial intelligence and natural language processing work on identifying features and principles that inform the design of computational models that can process and produce figurative language \cite{veale2000computation, veale2007comprehending}.
+Metaphor and other types of figurative language raise a range of questions core to the study of language and cognition. As a result, how people derive and produce figurative meanings has been approached from various angles and with a diverse set of methods. Some psychologists focus on the cognitive mechanisms that underly interpretations of specific types of figurative use, such as how people align shared properties and analogous relations across domains in order to understand metaphor \cite{gentner1983structure, gentner2001metaphor}. \textcolor{red}{Others aim to identify figurative uses in corpora in order to extract patterns that shed light on how figurative meanings are generated and interpreted in naturalistic contexts \cite{steen2010method}}. In the realm of linguistics and pragmatics, researchers have applied theories of communication to model how people arrive at contextually appropriate interpretations of literally inappropriate utterances \cite{kao2014nonliteral, wilson2006metaphor, gibbs2012interpreting}. Finally, researchers in natural language processing have worked on identifying features and principles that inform the design of artificial agents that can process and produce figurative language \cite{veale2000computation, veale2007comprehending}.
 
-In this symposium, we will discuss the methods that our speakers have employed to examine how people interpret and produce figurative meaning, as well as ways to combine complementary approaches. By bringing together experts with different theoretical perspectives and from a range of disciplines, we hope to discuss outstanding questions that may require a synthesis of tools to resolve. We will open the symposium with a brief overview of the landscape of metaphor and figurative meaning, provided by \textbf{N. Goodman}. The overview will be followed by four 20-minute talks, starting with \textbf{F. Maravilla} presenting joint work with \textbf{D. Gentner} on [insert summary].
-\textbf{G. Steen} will then talk about [insert summary]. \textbf{J. Kao} will present joint work with \textbf{Goodman} on applying Bayesian models of pragmatics to predict people's interpretation of a range of figurative uses. Last but not least, \textbf{T. Veale} will present his work on a computational system that employs cognitive principles to automatically generate figurative language.
+In this symposium, we will discuss the methods that our speakers have employed to examine how people interpret and produce figurative meaning, as well as ways to combine complementary approaches. By bringing together experts with different theoretical perspectives and from a range of disciplines, we hope to discuss outstanding questions that may require a synthesis of tools to resolve. We will open the symposium with a brief overview of the landscape of metaphor and figurative meaning, provided by \textbf{N. Goodman}. The overview will be followed by four 20-minute talks, starting with \textbf{F. Maravilla} presenting joint work with \textbf{D. Gentner} on \textcolor{red}{[insert summary]}.
+\textbf{G. Steen} will then talk about \textcolor{red}{[insert summary]}. \textbf{J. Kao} will present joint work with \textbf{Goodman} on applying Bayesian models of pragmatics to predict people's interpretation of a range of figurative uses. Last but not least, \textbf{T. Veale} will present his work on a computational system that employs cognitive principles to automatically generate figurative language.
 The symposium will end with a 20-30 minute discussion, facilitated by \textbf{Goodman} and \textbf{Kao} and with active participation from the speakers and audience.	
 
 
-\section{Title}
+\textcolor{red}{\section{Title}}
 \large \textbf{Francisco Maravilla \& Dedre Gentner}\\
-Abstract
+\textcolor{red}{Abstract}
+
+\textcolor{red}{\section{Title}}
+\large \textbf{Gerard Steen}\\
+\textcolor{red}{Abstract}
+
 
 \section{Modeling the pragmatics of figurative communication}
 \large \textbf{Justine T. Kao \& Noah D. Goodman}\\
 Figurative language often requires listeners to access a great deal of background knowledge and discourse context in order to arrive at appropriate interpretations. For example, the metaphor \emph{John is a rock} is taken as a compliment when the topic of conversation is John's stability, but as criticism when the topic is his intellectual ability. How do listeners incorporate multiple sources of information to infer the speaker's intended meaning, especially when the literal meaning of the utterance is false? In this talk, we describe an extended version of the Rational Speech Act (RSA) model, a Bayesian computational model that formalizes core principles of communication in order to capture human pragmatic reasoning. In particular, our model highlights the idea that speakers are assumed to be informative with respect to specific communicative goals, which may be to convey subjective attitudes or salient dimensions instead of objective information about the world. By reasoning about the range of communicative goals a speaker may have, listeners can go beyond the literal meanings of utterances to arrive at figurative interpretations. Using a series of behavioral experiments, we show that our model predicts people's interpretations of hyperbole, irony, and metaphor with high accuracy. We show that despite apparent differences among these subtypes of figurative language, the same computational framework can flexibly produce fine-grained interpretations for diverse figurative uses. We use this as evidence suggesting that the rich and often affectively-laden meanings expressed by figurative language can be explained by basic principles of communication.
 
-\section{Title}
-\large \textbf{Gerard Steen}\\
-Abstract
 
 \section{Metaphor and the human creative potential}
 \large \textbf{Tony Veale}
