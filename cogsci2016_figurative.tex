@@ -24,25 +24,25 @@
 \usepackage{pslatex}
 \usepackage{apacite}
 \usepackage{todonotes}
-\usepackage[usenames, dvipsnames]{color}
+%\usepackage[usenames, dvipsnames]{color}
 
 
 \title{Empirical and Computational Approaches to Metaphor and Figurative Meaning}
  
 \author{{\large \bf Justine T. Kao (justinek@stanford.edu) and Noah D. Goodman (ngoodman@stanford.edu)} \\ 
   Department of Psychology, 
-  Stanford University, Stanford CA, USA 
-  \AND{
-\large \bf Francisco Maravilla (fmaravil@gmail.com) and Dedre Gentner (gentner@northwestern.edu)} \\
-  Department of Psychology, Northwestern University,
-  Evanston IL, USA
-  \AND{\large \bf Gerard Steen (g.j.steen@uva.nl)} \\
-  Department of Dutch, University of Amsterdam,
-Amsterdam, Netherlands
-\AND{\large \bf Tony Veale (tony.veale@ucd.ie)} \\
-  Department of Computer Science, University College Dublin,
-  Dublin, Ireland
-}
+  Stanford University, Stanford CA, USA} 
+%  \AND{
+%\large \bf Francisco Maravilla (fmaravil@gmail.com) and Dedre Gentner (gentner@northwestern.edu)} \\
+%  Department of Psychology, Northwestern University,
+%  Evanston IL, USA
+%  \AND{\large \bf Gerard Steen (g.j.steen@uva.nl)} \\
+%  Department of Dutch, University of Amsterdam,
+%Amsterdam, Netherlands
+%\AND{\large \bf Tony Veale (tony.veale@ucd.ie)} \\
+%  Department of Computer Science, University College Dublin,
+%  Dublin, Ireland
+%}
 
 
 \begin{document}
@@ -63,35 +63,33 @@ One of the hallmarks of human intelligence is the ability to go beyond literal m
 
 Metaphor and other types of figurative language raise a range of questions core to the study of language and cognition;
 %, such as the relationship between metaphor and thought, analogical reasoning, communication, and creativity. 
-as a result, how people derive and produce figurative meanings has been approached from various angles and with a diverse set of methods. Some psychologists focus on the cognitive mechanisms that underly interpretations of specific types of figurative use, such as how people align shared properties and analogous relations across domains in order to understand metaphor \cite{gentner1983structure}. 
+as a result, how people derive and produce figurative meanings has been approached from various angles and with a diverse set of methods. Some psychologists focus on the cognitive mechanisms that underly interpretations of specific types of figurative use, such as how people align shared properties and analogous relations across domains in order to understand metaphor \cite{gentner1997alignment}. 
 %\textcolor{red}{Others aim to identify figurative uses in corpora in order to extract patterns that shed light on how figurative meanings are generated and interpreted in naturalistic contexts \cite{steen2010method}}. 
 Other researchers apply theories of communication to explain how people arrive at contextually appropriate interpretations of non-literal utterances \cite{steen2015developing, kao2014nonliteral}. Finally, natural language processing researchers seek to identify features and principles that can help artificial agents process and produce figurative language \cite{veale2007comprehending}.
 
-In this symposium, we will discuss the methods that our speakers have employed to examine how people interpret and produce figurative meaning, as well as ways to combine complementary approaches. By bringing together experts with different theoretical perspectives and from a range of disciplines, we aim to discuss outstanding questions that may require a synthesis of tools to resolve. We will open the symposium with a brief overview of the landscape of metaphor and figurative meaning, provided by \textbf{N. Goodman}. We will then present four 20-minute talks, starting with \textbf{F. Maravilla} presenting joint work with \textbf{D. Gentner} on \textcolor{red}{[insert summary]}.
-\textbf{G. Steen} will then introduce the Deliberate Metaphor Theory and highlight the importance of communicative intent. Continuing the thread, \textbf{J. Kao} will present joint work with \textbf{Goodman} on applying Bayesian models of communication to interpret figurative uses. Finally, \textbf{T. Veale} will present his work on a computational system that employs cognitive principles to automatically generate figurative language.
+In this symposium, we will discuss the methods that our speakers have employed to examine how people interpret and produce figurative meaning, as well as ways to combine complementary approaches. By bringing together experts with different theoretical perspectives and from a range of disciplines, we aim to discuss outstanding questions that may require a synthesis of tools to resolve. We will open the symposium with a brief overview of the landscape of metaphor and figurative meaning, provided by \textbf{N. Goodman}. We will then present four 20-minute talks, starting with \textbf{F. Maravilla} presenting joint work with \textbf{D. Gentner} on how conventionality, relationality, and aptness affect figurative language processing. \textbf{G. Steen} will then introduce the Deliberate Metaphor Theory and highlight the importance of communicative intent. Continuing this thread, \textbf{J. Kao} will present joint work with \textbf{Goodman} on applying Bayesian models of communication to interpret figurative uses. Finally, \textbf{T. Veale} will describe a computational system that employs cognitive principles to automatically generate figurative language.
 The symposium will end with a 20-30 minute discussion with the speakers and audience (facilitated by \textbf{Goodman} and \textbf{Kao}).	
 
 
-\textcolor{red}{\section{Title}}
-\large \textbf{Francisco Maravilla \& Dedre Gentner}\\
-\textcolor{red}{Abstract}
+\section{Conventionality, Relationality and Aptness in Figurative Language Processing}
+\large \textbf{Francisco Maravilla \& Dedre Gentner (Northwestern University)}\\Figurative statements can be expressed either in comparison syntax, as similes (An X is like a Y), or in categorization syntax, as metaphors (An X is a Y).  What determines preference for one form over the other? The Career of Metaphor account \cite{bowdle2005career, gentner1997alignment} links this difference to language evolution. Novel figuratives are processed as comparisons, so they are preferred in simile form. In contrast, conventional figuratives can be expressed as metaphors (categorization form), because they have acquired a standard metaphoric abstraction. A second account \cite{aisenman1999structure} proposes that people prefer to express relational meanings as metaphors and attributional meanings as similes. A third account, \citeA{glucksberg1990understanding} class inclusion theory of metaphor, claims that the preference for metaphor form depends on aptness, not conventionality \cite{glucksberg2003psycholinguistics}. We tested these accounts in three studies. In Experiment 1, conventionality and relationality significantly predicted preference for metaphor. In Experiment 2, we found that people provided relational interpretations for both forms. In Experiment 3 (underway) we test the claim that apt figuratives are preferred as metaphors, and ask how aptness relates to relationality. Our findings so far support the Career of Metaphor theory and Aisenman?s relationality hypothesis.
 
 \section{Introducing Deliberate Metaphor Theory}
-\large \textbf{Gerard Steen}\\
+\large \textbf{Gerard Steen (University of Amsterdam)}\\
 %\textcolor{red}{Abstract}
 99\% of all metaphorically used words have meanings that are so conventionalized that they can be found straight in a user's dictionary \cite{steen2010method}. This corpus-linguistic finding raises fundamental questions about how people produce and interpret metaphor in discourse. For instance, if conventionalized metaphorical meanings are so readily available, can a processing model that includes lexical disambiguation between metaphorical and non-metaphorical senses account for most metaphor use? This would go against Conceptual Metaphor Theory \cite{lakoff2008metaphors} and support part of \citeA{sperber2008deflationary}'s deflationary account of metaphor and would agree with \citeA{giora2008metaphor}'s position that (most) metaphor is nothing special. However, not all metaphor is conventional, and even conventional metaphor can require processing via on-line cross-domain comparison \cite{steen2008paradox, steen2015developing}. This is when metaphor is used deliberately as a metaphor, the referential meaning of the utterance in context involving an intentional comparison between two concepts, categories, spaces or domains. Examples include all novel metaphors (where processing can only go via the meaning of the source domain to arrive at an interpretation of the utterance as a whole) and all explicit comparisons (such as similes and analogies where the target is explicitly compared to some alien source). These deliberate metaphors point to a third dimension of metaphor, next to language and thought, i.e., communication, and can explain some of the current findings and theories, including \citeA{bowdle2005career}'s  Career of Metaphor Theory, in alternative ways. The paper will present a brief account of Deliberate Metaphor Theory.
 
 \section{Modeling figurative communication}
-\large \textbf{Justine T. Kao \& Noah D. Goodman}\\
+\large \textbf{Justine T. Kao \& Noah D. Goodman (Stanford)}\\
 Figurative language often requires listeners to access background knowledge and discourse context in order to arrive at appropriate interpretations. 
 %For example, the metaphor \emph{John is a rock} is taken as a compliment when the topic of conversation is John's stability, but as criticism when the topic is his intellectual ability. 
-How do listeners incorporate multiple sources of information to derive true information from literally false utterances? We describe an extended version of the Rational Speech Act (RSA) model, a Bayesian computational model that formalizes core principles of communication. Our model highlights the idea that speakers are assumed to be informative with respect to specific communicative goals, which may be to convey subjective attitudes instead of objective information about the world. By reasoning about the range of communicative goals a speaker may have, listeners can go beyond the literal meanings of utterances to arrive at figurative interpretations. Through a series of experiments, we show that our model predicts people's interpretations of hyperbole, irony, and metaphor with high accuracy. We show that despite apparent differences among these subtypes of figurative language, the same computational framework flexibly produces fine-grained interpretations for diverse figurative uses. We use this as evidence suggesting that the rich and often affectively-laden meanings expressed by figurative language can be explained by basic principles of communication.
+How do listeners incorporate multiple sources of information to derive true and relevant information from figurative utterances? We describe an extended version of the Rational Speech Act (RSA) model, a Bayesian computational model that formalizes core principles of communication. Our model highlights the idea that speakers are assumed to be informative with respect to specific communicative goals, which may be to convey subjective attitudes instead of objective information about the world. By reasoning about the range of communicative goals a speaker may have, listeners can go beyond the literal meanings of utterances to arrive at figurative interpretations. Through a series of experiments, we show that our model predicts people's interpretations of hyperbole, irony, and metaphor with high accuracy. We show that despite apparent differences among these subtypes of figurative language, the same computational framework flexibly produces fine-grained interpretations for diverse figurative uses. We use this as evidence suggesting that the rich and often affectively-laden meanings expressed by figurative language can be explained by basic principles of communication.
 
 
 \section{Metaphor and the human creative potential}
-\large \textbf{Tony Veale}
+\large \textbf{Tony Veale (University College Dublin)}
 
-Metaphors in the wild rarely occur in isolation. Rather, metaphors in many texts are supported by, or give support to, other metaphors, similes and blends.  These various figurative devices present different affordances to an author, and serve complementary roles in the communication of complex ideas. A tentative simile or analogy may lay the groundwork for bolder metaphors to come, which can in turn set the stage for an immersive conceptual blend. Clearly, these are not disjoint phenomena arising from distinct mechanisms, but the manifestations of different settings --- such as degree of integration --- of a common creative mechanism. Computational modeling offers researchers a generative approach to demonstrating this claim, by supporting the construction of generative systems that can produce their own similes, metaphors, analogies and blends from a small set of core principles. In this talk I explore the workings of such a computational system, called Metaphor Magnet, that is realized in a number of public forms, from a Twitterbot called @MetaphorMagnet to a Web service that provides figurative competence to 3rd-party software systems. In particular, I show how a separation of concerns --- chiefly, of conceptual content and linguistic framing --- allows the system to achieve a wide variety of human-like figurative outputs from a small number of cognitive principles and AI mechanisms.
+Metaphors in the wild rarely occur in isolation. Rather, metaphors in many texts are supported by, or give support to, other metaphors, similes and blends.  These figurative devices present different affordances to an author, and serve complementary roles in the communication of complex ideas. A tentative simile or analogy may lay the groundwork for bolder metaphors to come, which can in turn set the stage for an immersive conceptual blend. Clearly, these are not disjoint phenomena arising from distinct mechanisms, but the manifestations of different settings--such as degree of integration--of a common creative mechanism. Computational modeling offers researchers a generative approach to demonstrating this claim, by supporting the construction of generative systems that can produce their own similes, metaphors, analogies and blends from a small set of core principles. In this talk I explore the workings of such a computational system, called Metaphor Magnet, that is realized in a number of public forms, from a Twitterbot called @MetaphorMagnet to a Web service that provides figurative competence to 3rd-party software systems. In particular, I show how a separation of concerns--chiefly, of conceptual content and linguistic framing--allows the system to achieve a wide variety of human-like figurative outputs from a small number of cognitive principles and AI mechanisms.
 
 
 \bibliographystyle{apacite}
